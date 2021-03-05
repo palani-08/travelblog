@@ -1,0 +1,71 @@
+.logo{
+	margin-left:33%;
+	padding-top: 10%;
+}
+.navBar{
+	float: right;
+	padding-bottom: 10%;
+	padding-right: 35px;
+	background: grey;
+	justify-content: right;
+}
+
+.navarticle{
+padding-right: 30px;
+padding-left: 30px;
+}
+.navphotos{
+	padding-right: 50px;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container{
+	display: flex;
+	justify-content: space-around;
+	padding-top: 1em;
+}
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 10px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+}

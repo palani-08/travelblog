@@ -1,0 +1,21 @@
+<style>
+	
+		.navigation{
+
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: flex-end;
+
+			list-style: none;
+			margin: 0;
+			background: grey;
+
+		}
+		.navigation a{
+			padding: 1em;
+			display: block;
+			text-decoration: none;
+		}
+	
+	
+</style>
