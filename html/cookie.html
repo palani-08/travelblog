@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <body>
+            <script>
+                
+                function myfunction(){
+                    var cookievalue = document.myform.name.value + ";";
+                    document.cookie = 'name=cookievalue';
+                }
+                localStorage.setItem('name','palani');
+                console.log(localStorage.getItem('name','palani'));
+            </script>
+            <form name="myform">
+                <input type="text" placeholder="name">
+                <input type="text" placeholder="phone">
+                <input type="text" placeholder="email">
+                <button type="submit" onclick="myfunction()"> Submit </button>
+    </form>
+            </div>
+            <div id="table" name="table">
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>email</th>
+                    </tr>
+                </table>
+            </div>
+        </body>
+    </head>
+</html>
