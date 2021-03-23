@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+        </title> 
+    </head>
+    <body>
+        <script>
+            function cookievalue() {
+                var cookievalue = escape(document.myform.name.value);
+                console.log(cookievalue);
+                
+
+                var allcookie = unescape(document.cookie);
+                console.log(allcookie);
+
+
+                var now = new Date();
+                now.setMonth(now.getMonth() + 2);
+                document.cookie="appname = " + cookievalue;
+                document.cookie="expires = " + now.toUTCString() + ";";
+            }
+        </script>
+        <form name="myform">
+            <input type="text" name="name">
+            <button type="submit" onclick="cookievalue()"> Submit </button>
+        </form>
+    </body>
+</html>

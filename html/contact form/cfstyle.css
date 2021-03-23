@@ -1,0 +1,34 @@
+<style>
+
+#frm1 { 
+width: 140px;
+display: block; 
+background:grey;
+color: #fff;
+font-weight: 200;
+font-size: 1.2em;
+border: none;
+height: 30px;
+}
+
+textarea { height: 300px; font-size: 3em; }
+
+.header{
+text-align: center;
+font-size: 5ex;
+}
+
+body{
+margin: 4em;
+text-align: center ;
+}
+
+input, textarea { 
+margin: 2.5em auto;  
+font-size: 1em;
+display: block; 
+width: 400px; 
+padding: 0.5em;
+}
+
+</style>

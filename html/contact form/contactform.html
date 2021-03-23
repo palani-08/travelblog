@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <link rel="stylesheet" href="cfstyle.css">
+    <body>
+      <script>
+        function myfunction1(event,id){
+          document.getElementById(id).innerHTML =  document.getElementById(id).innerHTML + event.key;
+        }
+       
+
+
+      </script>
+        <h3 class="header">Contact Form</h3>
+        <div class="container">
+          <div id="form">
+            <form id= form1>
+              <input id="f1" onkeypress="myfunction1(event,'demo1')" placeholder=" FirstName" type="text"  required />
+              <p id="demo1"></p>
+              <input id="f2" onkeypress="myfunction1(event,'demo2')" placeholder="LastName" type="text"  required />
+              <p id="demo2"></p>
+              <input id="f3" onkeypress="myfunction1(event,'demo3')" placeholder="E-mail id" type="text"  required />
+              <p id="demo3"></p>
+              <textarea id="f4" onkeypress="myfunction1(event,'demo4')" placeholder="Comment"></textarea>
+              <p id="demo4"></p>
+              <button onclick=>Submit</button>
+            </form>
+            
+          </div>
+        </div>
+       
+       
+</body>
+</html>
