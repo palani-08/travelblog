@@ -1,0 +1,29 @@
+<style>
+    .contactform{
+display: block;
+}
+input{
+padding: 0.5em;
+margin: 0.5em;
+width: 400px;
+}
+body{
+margin:1.5em;
+}
+button{
+margin: 0.5em;
+}
+table{
+width: 800px;
+}
+td{
+border: 2px solid;
+
+}
+table, th, td {
+border: 1px solid black;
+}
+td{
+  padding-left: 10px;
+}
+  </style>
