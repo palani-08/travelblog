@@ -1,7 +1,6 @@
 
-
 function myfunction() {
-var name= document.getElementById("name").value;
+const name= document.getElementById("name").value;
 var phone= document.getElementById("phone").value;
 var email= document.getElementById("email").value;
 var address= document.getElementById("address").value;
@@ -40,6 +39,22 @@ row++;
 
  
 localStorage.setItem("addressbook~" + email, "=" + name + "~" + phone + "~" + email + "~" + address + "~" + pincode);
-var retrive = localStorage.getItem("addressbook~" + email);
-var table = retrive;
+ mytable.value=localStorage.getItem("addressbook~" + email);
+
+
+}
+function editrow() {
+   
+    document.getElementById("name").value = selectedrow.cell[0].innerHTML;
+    document.getElementById("phone").value = selectedrow.cell[1].innerHTML;
+    document.getElementById("email").value = selectedrow.cell[2].innerHTML;
+    document.getElementById("address").value = selectedrow.cell[3].innerHTML;
+    document.getElementById("pc").value = selectedrow.cell[4].innerHTML;
+
+}
+
+function deleteRow(r) {
+    var i = r.parentNode.parentNode.rowIndex;
+    document.getElementById("myTable").deleteRow(i);
+  
 }
