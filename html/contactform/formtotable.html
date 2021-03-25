@@ -1,16 +1,18 @@
 <html>
   <head>
     <title></title>
-      <body>
+     <script src="ftot.js"></script>
+  </head>
+   <body onload="getData(event)">
        <link rel="stylesheet" href="ftot.css">
-       <script src="ftot.js"></script>
+      
           <div class="contactform" id=inputxext>
             <input type="text" id="name" placeholder=Name><br>
              <input type="text" id="phone" placeholder=Phone><br>
             <input type="text" id="email" placeholder=E-mail><br>
              <input type="text" id="address" placeholder=Address><br>
              <input type="text" id="pc" placeholder=pincode><br>
-            <button id="submit" onclick="myfunction()">submit</button>
+            <button id="submit" onclick="saveData(event)">submit</button>
             
             
           </div>
@@ -31,5 +33,4 @@
         </div>  
       
       </body>
-  </head>
 </html>
