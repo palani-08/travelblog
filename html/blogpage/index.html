@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <script src="script.js"></script>
+    <div>
+    <textarea id="mytitle"  style="width: 650px;height: 45px;">  </textarea>
+    </div>
+</head>
+
+<body onload="getData(event)">
+    <link rel="stylesheet" href="style.css">
+    <div id=post>
+        <textarea id=mytextarea style="height: 500px; width: 650px; margin-top: 20px;">
+        </textarea>
+    </div>
+
+    <div id="mytags">
+        <a href="" id="taga">biking</a>
+        <a href="" id="tagb">travel</a>
+    </div>
+    <button id="submit" onclick="saveData(event)">submit</button>
+            
+            
+
+    <div>
+        <table id=mydisplay>
+            <tr>
+                <th>Title</th>
+                <th>Post</th>
+                <th>Tags</th>
+                <th>Options</th>
+            </tr>
+            <div id="buttons">
+                <button id="Edit" onclick="editRow()">Edit</button>
+                <button id="Delete" onclick="deleteRow(this)">Delete</button>
+            </div>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+body {
+    margin: 4em;
+    text-align: center ;
+     }
+     
+      
+      a {
+        padding-left: 20px;
+        padding-top: 30px ;
+      }
+      table{
+        width: 800px;
+        margin-top: 30px;
+        margin-left: 270px;
+        }
+        td{
+        border: 2px solid;
+        
+        }
+        table, th, td {
+        border: 1px solid black;
+        }
+        td{
+          padding-left: 10px;
+        }
