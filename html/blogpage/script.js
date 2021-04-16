@@ -1,13 +1,14 @@
 function saveData(event){
-var row = 1;
+//var row = 1;
 var mytitle = document.getElementById("mytitle").value;
 var mytextarea = document.getElementById("mytextarea").value;
-var mytags = document.getElementById("mytags").innerText;
-if (!mytitle|| !mytextarea ) {
+var mytags = document.getElementById("mytags").value;
+
+if (!mytitle || !mytextarea || !mytags) {
     alert("please fill all");
     return;
 }
-var key = 'mycontent' + mytitle;
+var key = 'mycontent~' + mytitle;
 var checkRecord = JSON.parse(localStorage.getItem(key));
 if (checkRecord != null) {
     checkRecord.mytitle = mytitle;
