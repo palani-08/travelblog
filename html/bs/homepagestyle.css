@@ -1,0 +1,59 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navItem{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: rgb(255, 109, 109);
+    padding: 30px 300px 40px 300px;
+    margin: 35px 350px 20px 350px;
+   
+}
+
+li{
+    padding-right:30px;
+    padding-top:30px;
+}
+.flexContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row nowrap;
+    margin-left:30%;
+    margin-right:30%;
+    padding-top: 50px;
+    
+   
+}
+
+
+
+.card {
+    
+    width:300px;
+    border:grey;
+    border-style: solid;
+    margin: 10px;
+
+}
+
+.cardHeader{
+    margin-left: 5px;
+    font-size: 1.5em;
+}
+
+.cardImage{
+
+    width: 300px;
+    height: 150px;
+}
+.img{
+    padding-right: 250px;
+}
+.box{
+    padding-right: 50px;
+}
