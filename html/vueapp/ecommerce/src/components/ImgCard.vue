@@ -3,7 +3,7 @@
     <div>
         <b-col>
       <b-card 
-      title="This is a Card"
+      :title="name"
       img-src="@/components/download (4).jpeg"
       img-alt="Nike"
       img-top
@@ -29,7 +29,7 @@ some text here some text here some text here some text here some text here some 
 
 
 export default {
-  name:"home",
+  props:["name"],
 components: {
     
     
