@@ -10,7 +10,7 @@
         </b-card-text>
       </b-card>
 
-      <b-card style="background-color: #D3D3D3;">
+      <b-card style="background-color: #D3D3D3;border-style: none;">
         <b-card-text>
             <h1 style="margin-bottom:10px;">Nike</h1>
           Some quick example text to build on the card and make up the bulk of the card's content.
