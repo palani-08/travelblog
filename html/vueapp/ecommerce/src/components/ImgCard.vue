@@ -14,7 +14,10 @@
         <b-card-text>
 some text here some text here some text here some text here some text here some text here
         </b-card-text>
-        <b-button variant="primary">View</b-button>
+        <router-link to="/Page1">
+       <b-button variant="primary">View</b-button>
+        </router-link>
+        <router-view />
       </b-card>
     </b-col>
 
