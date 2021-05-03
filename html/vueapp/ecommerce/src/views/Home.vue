@@ -1,12 +1,12 @@
 <template>
  <b-container>
   <b-row align-v="center">
-    <img-card v-for = "card in displaycards" :key = "card.id" :name = "card.name"></img-card>
+    <img-card v-for = "card in displaycards" :key = "card.Id" :name = "card.name"></img-card>
   </b-row>
   <b-pagination
       v-model="currentPage"
       :total-rows="rows"
-      :per-page="perPage"
+      :per-page="perpage"
       first-text="First"
       prev-text="Prev"
       next-text="Next"
@@ -29,25 +29,25 @@ export default {
 
   },
   data(){
-  return{
+  return{ 
     cards: [],
     displaycards:[],
     currentPage: 1,
     rows: 1,
-    PerPage : 6
+    perpage : 6
   };
   },
   methods: {
     async fetchData(){
       const res = await fetch("cards.json");
       const val = await res.json();
-      this.cards = val;
+      this.cards = val; 
       this.displaycards = val.slice(0, 6);
       this.rows = this.cards.length;
       console.log(val);
   },
   paginate(currentPage) {  
-    const start = (currentPage - 1) * this.perPage;
+    const start = (currentPage - 1) * this.perpage;
     this.displaycards = this.cards.slice(start, start+6);
   }
   }
