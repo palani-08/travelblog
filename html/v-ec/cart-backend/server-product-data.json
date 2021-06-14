@@ -4,10 +4,10 @@
       "title": "CAT Engine",
       "description": "Lorem ipsum dolor sit amet, consectetur  dignissimos suscipit voluptatibus distinctio, error nostrum expedita omnis ipsum sit inventore aliquam sunt quam quis!",
       "product_type": "power set/diesel engine",
-      "image_tag": "CAT-engine.png",
+      "image_tag": "fitbit-360-product.png",
       "created_at": 2020,
       "owner": "Colton",
-      "owner_photo": "image-colton.jpg",
+      "owner_photo": "fitbit-360-product.png",
       "email": "colt@gmail.com",
       "price": 719.9
     },

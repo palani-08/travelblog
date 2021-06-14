@@ -1,6 +1,7 @@
 <template>
   <div>
     <Navbar/>
+    <productlist />
     <div class="container mt-6">
       <div class="columns">
         <div class="column is-12 column--align-center">
@@ -9,13 +10,16 @@
       </div>
     </div>
   </div>
+  
 </template>
 <script>
+import productlist from './components/productlist.vue'
 import Navbar from './components/core/Navbar'
 export default {
   name: 'App',
   components: {
-    Navbar
+    Navbar,
+    productlist
   }
 }
 </script>
