@@ -22,7 +22,7 @@
 import Vue from 'vue';
 import axios from 'axios'
 import VueAxios from 'vue-axios';
-Vue.use(VueAxios,axios)
+//Vue.use(VueAxios,axios)
 export default{
     
    name: "productlist" ,
@@ -33,11 +33,13 @@ export default{
    
    mounted()
    {
-       Vue.axios.get('http://localhost:3000/products')
+       axios.get('http://localhost:3000/products')
        .then((resp)=>{
+           console.log(resp)
            this.list=resp.data.data;
         console.warn(resp.data.data)
        })
+       
    }    
 
 }
