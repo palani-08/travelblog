@@ -1,7 +1,9 @@
 <template>
   <div>
     <Navbar/>
+    
     <productlist />
+  
     <div class="container mt-6">
       <div class="columns">
         <div class="column is-12 column--align-center">

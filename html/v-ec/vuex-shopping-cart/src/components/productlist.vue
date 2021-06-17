@@ -35,9 +35,9 @@ export default{
    {
        axios.get('http://localhost:3000/products')
        .then((resp)=>{
-           console.log(resp)
+           //console.log(resp)
            this.list=resp.data.data;
-        console.warn(resp.data.data)
+       // console.warn(resp.data.data)
        })
        
    }    

@@ -8,8 +8,11 @@ const PRODUCT_DATA_FILE = path.join(__dirname, 'server-product-data.json');
 const CART_DATA_FILE = path.join(__dirname, 'server-cart-data.json');
 
 app.set('port', (process.env.PORT || 3000));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+
 app.use((req, res, next) => {
   res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
   res.setHeader('Pragma', 'no-cache');
